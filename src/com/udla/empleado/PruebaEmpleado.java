@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author jonas
+ * @author
  */
 public class PruebaEmpleado {
 
@@ -53,12 +53,15 @@ public class PruebaEmpleado {
                 + " " + empleado1.getNombre()
                 + " " + empleado1.getApellido()
                 + " " + "es:" + empleado1.obtenerSalarioAnual());
+        System.out.println("Salario Mensual:"+empleado1.getSalarioMensual());
+        System.out.println("|------------------------------|");
         
         System.out.println("El salario aumentado anual del"
                 + " " + empleado2.getNombre()
                 + " " + empleado2.getApellido()
                 + " " + "es:" + empleado2.obtenerSalarioAnual());
-
+        System.out.println("Salario Mensual:"+empleado1.getSalarioMensual());
+        
     }
 
 }
