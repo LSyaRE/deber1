@@ -46,14 +46,18 @@ public class PruebaEmpleado {
             }
         }
 
-        double empleado1Aumento = empleado1.getSalarioMensual() * 1.10;
-        empleado1.setSalarioMensual(empleado1Aumento);
+        empleado1.aumentarSalarioMensual();
+        empleado2.aumentarSalarioMensual();
 
-        double empleado2Aumento = empleado2.getSalarioMensual() * 1.10;
-        empleado2.setSalarioMensual(empleado2Aumento);
-
-        System.out.println("El salario anual del" + " "+empleado1.getNombre()+ " " + "es:" + empleado1.obtenerSalarioAnual());
-        System.out.println("El salario anual del"+ " " + empleado2.getNombre()+ " " + "es:" + empleado2.obtenerSalarioAnual());
+        System.out.println("El salario aumentado anual del empleado"
+                + " " + empleado1.getNombre()
+                + " " + empleado1.getApellido()
+                + " " + "es:" + empleado1.obtenerSalarioAnual());
+        
+        System.out.println("El salario aumentado anual del"
+                + " " + empleado2.getNombre()
+                + " " + empleado2.getApellido()
+                + " " + "es:" + empleado2.obtenerSalarioAnual());
 
     }
 

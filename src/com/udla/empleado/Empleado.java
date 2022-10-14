@@ -21,11 +21,19 @@ public class Empleado {
         this.apellido = apellido;
         this.salarioMensual = salario;
     }
+
     
-    public double obtenerSalarioAnual(){
+    //Metodos
+    public double obtenerSalarioAnual() {
         return this.salarioMensual * 12;
     }
 
+    public void aumentarSalarioMensual() {
+        this.salarioMensual = this.salarioMensual * 1.10;
+    }
+
+    
+    //Getteres y Setteres
     public double getSalarioMensual() {
         return salarioMensual;
     }
