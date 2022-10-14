@@ -47,7 +47,7 @@ public class BMI {
         return alturaEnMetros;
     }
 
-    public void setEnAlturaMetros(float alturaMetros) {
+    public void setAlturaEnMetros(float alturaMetros) {
         if (alturaMetros > 0) {
             this.alturaEnMetros = alturaMetros;
         }

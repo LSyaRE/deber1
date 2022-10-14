@@ -17,7 +17,7 @@ public class PruebaBMI {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+        BMI bmi = new BMI(0,0);
         
         System.out.println("Ingrese el peso en kilogramos");
         int pesoEnKilogramos = scanner.nextInt();
@@ -25,6 +25,10 @@ public class PruebaBMI {
         System.out.println("Ingrese la altura en metros");
         float alturaEnMetros = scanner.nextFloat();
         
+        bmi.setAlturaEnMetros(alturaEnMetros);
+        bmi.setPesoEnKilogramos(pesoEnKilogramos);
+       
+        System.out.println("Su BMI es"+" "+bmi.mostrarBMI());
         
 
     }
